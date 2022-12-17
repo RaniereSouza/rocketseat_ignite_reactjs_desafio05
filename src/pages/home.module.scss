@@ -1,1 +1,49 @@
-// TODO
+.postListContainer {
+  list-style: none;
+  display: flex !important;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.postListItem {
+  h3 {
+    font-size: 1.75rem;
+    line-height: 2.125rem;
+    margin-bottom: .5rem;
+
+    a {
+      color: var(--title-text-color);
+
+      &:hover {
+        color: var(--default-link-color);
+      }
+    }
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+    margin-bottom: 1.5rem;
+  }
+
+  span {
+    line-height: 1.0625rem;
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+
+    &:not(:last-of-type) {
+      margin-right: 1.5rem;
+    }
+  }
+}
+
+.morePostsBtn {
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  color: #ff57b2;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+}

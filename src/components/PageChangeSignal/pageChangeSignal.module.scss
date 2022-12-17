@@ -1,0 +1,23 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg)
+  };
+  100% {
+    transform: rotate(360deg)
+  };
+}
+
+.pageChangeSignalWrapper {
+  position: fixed;
+  top: 1.5rem;
+  right: 3rem;
+  color: var(--default-link-color);
+  display: none;
+}
+
+.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: spin 4s linear infinite;
+}

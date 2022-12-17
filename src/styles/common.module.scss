@@ -1,1 +1,5 @@
-// TODO
+.genericContainer {
+  width: var(--default-container-width);
+  margin: 0 auto;
+  display: block;
+}

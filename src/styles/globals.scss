@@ -1,7 +1,45 @@
+:root {
+  --default-text-size: .875rem; // should be 14px by default
+  --default-font: 'Roboto', sans-serif;
+  --default-bg-color: #1a1d23;
+  --default-container-width: calc(50vw - 1.25rem);
+  --default-text-color: #d7d7d7;
+  --default-link-color: #ff57b2;
+  --title-text-color: #f8f8f8;
+  --header-padding: 4.5rem 0;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: var(--default-font);
+  transition: all .25s;
 }
 
-// TODO
+html {
+  font-size: 16px; // reference value for 1rem
+}
+
+body, input, button, textarea, select {
+  font-size: var(--default-text-size);
+}
+
+body {
+  background-color: var(--default-bg-color);
+  color: var(--default-text-color);
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: var(--default-link-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--title-text-color);
+}
